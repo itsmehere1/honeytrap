@@ -22,7 +22,7 @@ def test_honeytrap(url):
         print(f"\nFound {len(all_links)} links on the page")
         
         # Try to access the honeytrap link
-        honeytrap_url = f"{url}/customers/AI-BOT-DETECTED"
+        honeytrap_url = f"{url}/hidden/secret-trap"
         print(f"\nAttempting to access honeytrap URL: {honeytrap_url}")
         
         honeytrap_response = requests.get(honeytrap_url, headers=headers)
@@ -39,5 +39,5 @@ def test_honeytrap(url):
 
 if __name__ == "__main__":
     # Replace this with your deployed URL
-    deployed_url = "https://your-app-name.onrender.com"  # Update this with your actual deployed URL
+    deployed_url = "https://honeytrap.onrender.com"  # Update this with your actual deployed URL
     test_honeytrap(deployed_url) 

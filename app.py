@@ -15,7 +15,7 @@ logging.basicConfig(
 def index():
     return render_template('index.html')
 
-@app.route('/customers/AI-BOT-DETECTED')
+@app.route('/hidden/secret-trap')
 def honeytrap():
     # Get additional information about the request
     ip = request.remote_addr
